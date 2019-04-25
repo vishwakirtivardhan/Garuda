@@ -1,0 +1,144 @@
+<body>
+
+<!-- This is the code for the top div navbar -->
+<nav class="fixed-nav-bar navbar navbar-expand-sm bg-dark navbar-dark "  id="navbar" style="margin-top: -16px;">
+	<div class="container" >
+<a href="#" class="navbar-brand font-weight-bold font-weight-bolder"> Garuda </a>
+<button class="navbar-toggler" data-target='#navbarid' data-toggle='collapse'><span class="navbar-toggler-icon"></span></button>
+	<div class="collapse navbar-collapse" id="navbarid">
+	<ul class="navbar-nav ml-auto">
+	<form class="form-inline">	
+	<li class="nav-item" ><input type="text" name="text" class="form-control form-control" placeholder="Search previous streaming : -"></li>
+	
+	<li class="nav-item " style="margin-left: 20px"><button class="btn bg-success text-light">Find ?</button></li>
+
+		<li class="nav-item" style="margin-left: 20px"><button class="btn bg-light">Login</button></li>
+		
+		<li class="nav-item" style="margin-left: 5px"><button  class="btn bg-light" onclick="" >Sign Up
+		</button></li>
+		
+</form>
+	</ul>
+	</div>
+	</div>
+</nav><!-- this the end for navbar-->
+
+<hr class="hr">
+<br>
+
+
+<div class="container " id="btn2" style="margin-top: 50px;">
+	<button  id="display" class="btn btn-light btn-outline-success btn-block" style="height: 50px;">
+		Click 
+<span class="spinner-border spinner-border-sm"></span>
+  
+	Go Live !</button>
+</div>
+
+<br>
+<hr>
+<div class="container bg-light" id="div1">
+
+
+<center><h1>Garuda Live Streaming On Air </h1></center>
+<center><img src="stream.mjpg" width="100%" height="480"></center>
+	
+	</button>
+</div>
+<br>
+<hr>
+
+<footer>
+<section class="social-bar-2">
+<a class="social-bar-2__item  social-bar-2__item--twitter" href="#">
+<span class="social-bar-2__item__text">Twitter</span>
+</a>
+<a class="social-bar-2__item  social-bar-2__item--github" href="#">
+<span class="social-bar-2__item__text">Github</span>
+</a>
+<a class="social-bar-2__item  social-bar-2__item--facebook" href="#">
+<span class="social-bar-2__item__text">Facebook</span>
+</a>
+</section>
+Designed by <a href="#">Vishwakirti Sharma</a> . Powered by <a href="https://www.lpu.in/" target="_blank">LPU</a> . Hosted on <a href="https://github.com/vishwakirtivardhan" target="_blank">Github</a>
+</footer>
+
+
+
+<script type="text/javascript">
+// this code for the pop of the images 
+function signup(){
+//window.location = "sign_up.php";
+}
+// this end of the code pop images	
+// this code for streaming display
+$(document).ready(function(){
+
+	$('#display').click(function(){
+
+		$('#div1').css('display','block');
+
+	});
+
+});
+
+
+$(document).ready(function () {
+
+
+							$('input').mouseenter(function(){
+
+								$('#navbar').css({
+
+										'opacity' :'0.5',
+										'filter':'alpha(opacity=100)'
+													});
+
+								$('input').css({
+									
+									'padding-left':'200px',
+								//	'background-color':'black',
+									'border-style':'groove',
+									'border-radius':'5',
+									'opacity':'1.0',
+									'filter':'alpha(opacity=100)',
+								//	'tarnsition':'padding-left 2s'
+									//'-webkit-transition':  '2s', /* For Safari 3.1 to 6.0 */
+									'transition': 'padding-left 2s'
+
+								});
+
+							});
+
+
+							// this code for the navbar mouse up
+
+							$('input').mouseleave(function(){
+
+								$('#navbar').css({
+
+				'opacity' :'1.0',
+				'filter':'alpha(opacity=100)'
+								});
+
+								// this code for the back to normal of same styles
+
+								$('input').css({
+									
+									'padding-left':'10px',
+									'background-color':'white',
+									'border-style':'none',
+								//	'border-radius':'',
+								//	'tarnsition':'padding-left 2s'
+									//'-webkit-transition':  '2s', /* For Safari 3.1 to 6.0 */
+									'transition': 'padding-left 2s'
+
+								});
+
+							});
+	// body...
+});
+
+</script>
+
+</body>
